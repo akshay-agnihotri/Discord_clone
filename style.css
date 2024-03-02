@@ -1,14 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Cormorant+Garamond&family=Manrope&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,700&family=Raleway:wght@200&family=Roboto+Flex:opsz,wght@8..144,600&display=swap');
 
-
-
-
-
-
-
-
-
-
 *{
     margin: 0;
     padding: 0;
@@ -19,7 +10,9 @@ html,body{
     height:100vh;
     overflow-x: hidden;
 }
-
+/* body{
+    overflow-y: auto;
+} */
 /*-------------------nav_bar----------------- */
 .navbar_section{
     width: 100%;
@@ -31,7 +24,6 @@ html,body{
     margin: 0 auto;
     padding: 0 40px;
     height: 100%;
-    background-color: #404EED;
 }
 .nav_content{
     width: 100%;
@@ -83,6 +75,7 @@ html,body{
 /*-------------------hero_section----------------- */
 .hero_section{
     position: relative;
+    margin-top: 80px;
     width: 100%;
     min-height: 626px;
     background-color: #404EED;
@@ -315,6 +308,12 @@ html,body{
 /*-----------------media queries--------------- */
 
 /*-------------------nav_bar----------------- */
+@media screen and (max-width:1023.9px){
+    .navbar_section{
+        position: fixed;
+        z-index: 10;
+    }
+}
 @media screen and (max-width:1023.9px) {
     .nav_content>ul>li{
         display:none;
