@@ -6,9 +6,10 @@ const originalBgColor = navbarSection.style.backgroundColor;
 let lastScrollTop = 0;
 
 function scrollListener() {
-    const scrollTop = body.scrollTop || document.documentElement.scrollTop;
+    // console.log(body.scrollTop);
+    const scrollTop = body.scrollTop;
 
-    if (scrollTop > lastScrollTop) {
+    if (scrollTop > 0) {
         // Scrolling down
         navbarSection.style.backgroundColor = "#5865F2";
     } else {

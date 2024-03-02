@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:wght@400;500;700&family=Cormorant+Garamond&family=Manrope&family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,400;1,700&family=Raleway:wght@200&family=Roboto+Flex:opsz,wght@8..144,600&display=swap');
+@import url('https://fonts.cdnfonts.com/css/abc-ginto-nord-unlicensed-trial');
 
 *{
     margin: 0;
@@ -75,7 +76,6 @@ html,body{
 /*-------------------hero_section----------------- */
 .hero_section{
     position: relative;
-    margin-top: 80px;
     width: 100%;
     min-height: 626px;
     background-color: #404EED;
@@ -118,7 +118,7 @@ html,body{
 .hero_section_heading{
     font-size: 3.5rem;
     font-weight:800;
-    font-family: 'Open Sans', sans-serif;
+    font-family: 'ABC Ginto Nord Unlicensed Trial 800', sans-serif;
     font-weight:bold;
     color: white;
 }
@@ -329,6 +329,13 @@ html,body{
     .nav_container{
         padding: 0 24px;
     }
+
+}
+@media screen and (max-width:477.6px){
+    .nav_button{
+        display: none;
+    }
+
 }
 
 /*-------------------hero_section----------------- */
@@ -372,7 +379,7 @@ html,body{
 }
 @media screen and (max-width:790.6px){
     .hero_section-content{
-        padding: 56px 24px 0 24px;
+        padding: 160px 24px 0 24px;
     }
     .hero_foreground_right{
         display: none;
@@ -399,6 +406,9 @@ html,body{
     }
     .hero_section_heading{
         font-size: clamp(24px,5vw,44px);
+        font-size: 56px;
+        font-style: 700;
+        margin: 0 auto;
     }
     .btn_container{
        flex-direction: row;
